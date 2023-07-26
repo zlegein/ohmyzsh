@@ -19,7 +19,7 @@ alias dxk='docker rm -f $(docker ps -a -fname=dx* -q)'
 alias dxrmi='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'
 alias dxnuke='docker rm -f $(docker ps -a -q) && docker rmi -f $(docker images -q)'
 alias dxs='docker-compose -f dx-docker/compose/pot-nodejs-develop.yml up --build'
-alias='history | grep $1'
+alias hist='history | grep $1'
 
 # Additional Path Settings
 
